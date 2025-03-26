@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>KataAkademia Privet!!!!</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #3603ee;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>List of cars</h1>
+
+<!-- Таблица для отображения машин -->
+<table>
+    <thead>
+    <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>The year of issue</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Thymeleaf цикл для отображения списка машин -->
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.brand}"></td>
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.year}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Ссылка для возврата на главную страницу -->
+</body>
+</html>

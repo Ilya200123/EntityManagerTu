@@ -16,7 +16,7 @@ public class CarDaoImp implements CarDao {
         cars.add(new Car("Toyota", "Corolla", 2020));
         cars.add(new Car("BMW", "X5", 2019));
         cars.add(new Car("Audi", "A4", 2021));
-        cars.add(new Car("Tesla", "Model S", 2022));
+        cars.add(new Car("Tesla", "Model S", 2024));
         cars.add(new Car("Ford", "Mustang", 2017));
 
     }
